@@ -615,28 +615,54 @@ img.scale {
   background-color: transparent;
   border: 0; }
 
-/* line 3, ../scss/_test.scss */
+/* line 1, ../scss/_test.scss */
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table; }
 
-/* line 9, ../scss/_test.scss */
+/* line 7, ../scss/_test.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 19, ../scss/_test.scss */
-#main #content {
+/* line 11, ../scss/_test.scss */
+#header {
+  background: red; }
+
+/* line 15, ../scss/_test.scss */
+#main {
   width: 66.10169%;
   float: left;
   margin-right: 1.69492%;
   background: #eaf9ff; }
-/* line 24, ../scss/_test.scss */
-#main #sidebar {
+
+/* line 20, ../scss/_test.scss */
+#sidebar {
   width: 32.20339%;
   float: right;
   background: #fff0f0; }
 
-/* line 30, ../scss/_test.scss */
+/* line 25, ../scss/_test.scss */
 #footer {
   clear: both; }
+
+/* line 29, ../scss/_test.scss */
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 35, ../scss/_test.scss */
+.social-icons ul li {
+  display: inline-block;
+  margin-left: 5px; }
+
+/* line 40, ../scss/_test.scss */
+.social-icons ul li img {
+  width: 30px;
+  border-radius: 50%; }
+
+/* line 45, ../scss/_test.scss */
+.social-icons ul li img:hover {
+  cursor: hand;
+  cursor: pointer; }

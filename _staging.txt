@@ -1,1 +1,7 @@
-** Add a config option for image file name in case it is img or images etc.
+** defaults
+	- social dir
+	- images dir
+	- Array or likely an object for image key/value && name/path
+	
+	- Values for transition effects
+	
