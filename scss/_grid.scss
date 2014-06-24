@@ -1,0 +1,154 @@
+// grid ------------------------------
+// -----------------------------------
+
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: after,
+	global-box-sizing: border-box,
+); 
+
+.wrapper {
+    @include container(960px);
+    padding: 0 20px;
+} 
+
+// Section & Row
+
+.section:before,
+.section:after,
+.row:before,
+.row:after,
+.row-flat:before,
+.row-flat:after {
+	display: table;
+	content: " ";
+}
+
+.section:after,
+.row:after,
+.row-flat {
+	clear: both;
+}
+
+.section {
+	//padding: 50px 0;
+	clear: both;
+}
+
+body .section:last-child {
+	padding-bottom: 90px;
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+.row:last-child {
+	margin-bottom: 0;
+}
+
+// Columns
+
+.col {
+	margin-bottom: 20px;
+}
+
+// == Delete ==
+
+.red {
+	background: red;
+}
+
+.blue {
+	background: blue;
+}
+
+.green {
+	background: green;
+}
+
+// ================= MediaQueries
+
+@include respond-to(tablets) {
+	
+	.col2 {
+		@include span(6);
+		margin-bottom: 0;
+	}
+	
+	.col3 {
+		@include span(4);
+		margin-bottom: 0;
+	}
+	
+	.col:last-child {
+		margin-right: 0;
+	}
+}
+
+// Columns
+
+.one-half, 
+.one-third, 
+.two-third, 
+.one-fourth, 
+.three-fourth, 
+.one-fifth, 
+.two-fifth, 
+.three-fifth, 
+.four-fifth {
+	position: relative;
+	float: none;
+	margin-bottom: 20px;
+}
+
+.one-half { width: 100%; }
+.one-third { width: 100%; }
+.two-third  { width: 100%; }
+.one-fourth { width: 100%; }
+.three-fourth { width: 100%; }
+.one-fifth { width: 100%; }
+.two-fifth { width: 100%; }
+.three-fifth { width: 100%; }
+.four-fifth { width: 100%; }
+	
+.last {
+	clear: right;
+	margin-right: 0 !important;
+}
+
+@include respond-to(tablets) {
+	
+	.one-half, 
+	.one-third, 
+	.two-third, 
+	.one-fourth, 
+	.three-fourth, 
+	.one-fifth, 
+	.two-fifth, 
+	.three-fifth, 
+	.four-fifth {
+		position: relative;
+		float: left;
+		margin-right: 4%;
+		margin-bottom: 0;
+	}
+	
+	.one-half { width: 48%; }
+	.one-third { width: 30.6667%; }
+	.two-third  { width: 65.3332%; }
+	.one-fourth { width: 22%; }
+	.three-fourth { width: 74%; }
+	.one-fifth { width: 16.8%; }
+	.two-fifth { width: 37.6%; }
+	.three-fifth { width: 58.4%; }
+	.four-fifth { width: 79.2%; }
+		
+	.last {
+		clear: right;
+		margin-right: 0 !important;
+	}
+}

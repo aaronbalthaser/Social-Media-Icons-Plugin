@@ -1,0 +1,32 @@
+// overrides -------------------------
+// -----------------------------------
+
+html {
+	font-family: $base-font-size;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    color: $base-font-color;
+    font-family: $base-font-primary;
+    font-size: $base-font-size;
+    line-height: $base-line-height;  
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+@include clearfix;
+  
+// hide that stuff! ------------------
+// -----------------------------------
+
+/* ---- Hidden Stuff Here ---- */

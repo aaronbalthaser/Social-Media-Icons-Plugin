@@ -1,0 +1,182 @@
+@import "compass";
+@import "compass/reset";
+@import "susy";
+@import "breakpoint";
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+#header,
+#footer {
+	height: 20px;
+}
+
+#content,
+#sidebar {
+	//height: 30px;
+}
+
+// -------------------- basic
+/*
+.wrapper {
+	@include container(80%);
+	//background: red;
+}
+
+#header {
+	background: #aefdae;
+}
+
+#main {
+	background: #acacac;
+	
+	#content {
+		@include span(8 of 12);
+		background: #d5f3ff;
+	}
+	
+	#sidebar {
+		@include span(4 at 9 of 12);
+		background: #ffd4d4;
+	}
+}
+
+#footer {
+	background: #ffff9b;
+} 
+*/
+
+// -------------------- mapping
+
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+);
+
+// Additional Layout
+$widelayout: (
+	columns: 24,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+);
+
+// Dynamically change layout
+//@include layout($widelayout);
+
+.wrapper {
+	@include container(80%);
+	//background: red;
+}
+
+#header {
+	background: #aefdae;
+}
+
+#content {
+	background: #d5f3ff;
+}
+		
+#sidebar {
+	background: #ffd4d4;
+}
+
+@include breakpoint(768px) {
+
+	#main {
+		background: #acacac;
+		
+		#content {
+			@include span(8);
+			background: #d5f3ff;
+		}
+		
+		#sidebar {
+			@include span(4 at 9);
+			background: #ffd4d4;
+		}
+	}
+}
+
+@include breakpoint(1200px) {
+
+	#main {
+		background: #acacac;
+		
+		#content {
+			@include span(9);
+			background: #d5f3ff;
+			
+			.col1,
+			.col2,
+			.col3 {
+				@include span(3 of 9);
+			}
+		}
+		
+		#sidebar {
+			@include span(3 at 10);
+			background: #ffd4d4;
+		}
+	}
+}
+
+
+
+#footer {
+	background: #ffff9b;
+} 
+
+// -------------------- shorhand syntax
+
+//@include layout(12 1/4 fluid float inside);
+
+/* has an order
+ - span
+ - grid
+ - keywords
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

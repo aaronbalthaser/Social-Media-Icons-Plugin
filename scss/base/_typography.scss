@@ -1,0 +1,270 @@
+// typography ------------------------
+// -----------------------------------
+
+a {  
+    color: $linkColor;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+        text-decoration: none;
+        color: $linkHover;
+    }
+
+    &:focus {
+        outline: thin dotted;
+    }
+
+    &:active,
+    &:hover {
+        outline: 0;
+    }
+}
+
+@include font-face('Carto Gothic Bold',
+    font-files(
+            'CartoGothicStd-Bold.woff', woff,
+            'CartoGothicStd-Bold.ttf', ttf,
+            'CartoGothicStd-Bold.svg', svg,
+            'CartoGothicStd-Bold.eot', eot)
+);
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");  
+
+#{headings()} {
+	font-family: $base-font-primary;
+    color: inherit;
+    line-height: $h-line-height;
+    text-rendering: optimizelegibility;
+}
+
+h1 small,
+h2 small {
+    font-weight: normal;
+    color: $h-color;
+}
+
+h1,
+.h1 {
+    font-size: $h1-font-size;
+    margin-bottom: $h1-margin;
+}
+
+h2,
+.h2 {
+    font-size: $h2-font-size;
+    margin-bottom: $h2-margin;
+}
+
+h3,
+.h3 {
+    font-size: $h3-font-size;
+    margin-bottom: $h3-margin;
+}
+
+h4,
+.h4 {
+    font-size: $h4-font-size;
+    margin-bottom: $h4-margin;
+}
+
+h5,
+.h5 {
+    font-size: $h5-font-size;
+    margin-bottom: $h5-margin;
+}
+
+h6,
+.h6 {
+    font-size: $h6-font-size;
+    margin-bottom: $h6-margin;
+}
+
+p,
+ul,
+ol,
+dl,
+table,
+fieldset,
+blockquote,
+pre,
+code {
+    margin-bottom: 22px;
+}
+
+b, strong {
+    //@extend .strong;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+ins {
+    background-color: $ins-bg-color;
+    color: $ins-color;
+    text-decoration: none;
+}
+
+mark {
+    background-color: $mark-bg-color;
+    font-style: italic;
+    font-weight: bold;
+    color: $mark-color;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+strong,
+th,
+head td {
+    font-weight: 600;
+}
+
+cite,
+em {
+    font-style: italic;
+}
+
+code,
+pre {
+    display: block;
+    font-family: $code-font;
+    white-space: pre;
+}
+
+dfn {
+    font-style: italic;
+}
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid $hr;
+    margin: 10px 0;
+    padding: 0;
+    height: 1px;
+}
+
+::selection {
+    background: $selection-bg;
+    color: $selection-color;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: $selection-bg;
+    color: $selection-color;
+    text-shadow: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="password"],
+textarea {
+    //@include rounded(3);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+// Lists
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+}
+
+ul li {
+    margin-left: .85em;
+}
+
+ul ul {
+    list-style-type: square;
+}
+
+ul ul ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-position: outside;
+    list-style-type: decimal;
+    margin-left: 2.35em;
+}
+
+dt {
+    margin-top: .8em;
+    margin-bottom: .4em;
+    font-weight: bold;
+}
+
+ol ol, ul ol {
+    margin-left: 2.5em;
+}
+
+ul ol, ol ul, ol ol, ul ul {
+    margin-bottom: 0;
+}
+
+// Blockquotes
+
+blockquote {
+    margin: 0 0 1.5em -24px;
+    padding-left: 24px;
+    border-left: 2px solid #c7ced6;
+    font-family: Cambria, Georgia, Times, "Times New Roman";
+    font-style: normal;
+}
+
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+

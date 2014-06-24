@@ -1,0 +1,21 @@
+
+// This is only to hold the mobile first starter. This can be relocated to a file of choice.
+// If you do not use this delete the import from global SCSS.
+
+.wrapper {
+	@include container;
+}
+
+#main {
+	padding: 4px;
+	
+	.col1 {
+		background-color: #ffc4c4;
+		
+	}
+	
+	.col2 {
+		background-color: #fcd48f;
+		
+	}
+}

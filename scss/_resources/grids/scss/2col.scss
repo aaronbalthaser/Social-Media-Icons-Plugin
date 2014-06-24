@@ -1,0 +1,158 @@
+@import "compass";
+@import "compass/reset";
+@import "susy";
+@import "breakpoint";
+
+.clearfix:before, 
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+#header,
+#footer {
+	height: 20px;
+}
+
+#content,
+#sidebar {
+	height: 30px;
+}
+
+#header {
+	background: #aefdae;
+}
+
+#content {
+	background: #d5f3ff;
+}
+		
+#sidebar {
+	background: #ffd4d4;
+}
+
+#footer {
+	background: #ffff9b;
+}
+
+/*
+
+@include breakpoint(480px) {
+	
+}
+
+@include breakpoint(768px) {
+	
+}
+
+@include breakpoint(960px) {
+	
+}
+
+@include breakpoint(1220px) {
+	
+}
+
+@include breakpoint(1420px) {
+	
+}*/
+
+// -------------------- basic
+
+$susy: (
+	columns: 12,
+	global-box-sizing: border-box,	
+);
+
+.wrapper {
+	@include container(100%);
+	padding: 0 20px;
+	
+	@include breakpoint(768px) {
+		@include container(960px);
+	}
+}
+
+@include breakpoint(768px) {
+
+
+	#main {
+		background: #acacac;
+		
+		#content {
+			@include span(8);
+			background: #d5f3ff;
+		}
+		
+		#sidebar {
+			@include span(4 at 9);
+			background: #ffd4d4;
+			box-sizing: border-box; 
+		}
+	}
+}
+
+@include breakpoint(1200px) {
+
+	#main {
+		background: #acacac;
+		
+		#content {
+			@include span(9);
+			background: #d5f3ff;
+			
+			.col1,
+			.col2,
+			.col3 {
+				@include span(3 of 9);
+			}
+		}
+		
+		#sidebar {
+			@include span(3 at 10);
+			background: #ffd4d4;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

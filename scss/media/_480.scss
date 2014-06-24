@@ -1,0 +1,25 @@
+$total-columns				: 12;
+$column-width				: 60px;
+$gutter-width				: 20px;
+$grid-padding				: 0px;
+$show-grid-backgrounds  	: false;
+
+$container-style            : magic;
+$container-width            : 60em;
+
+.wrapper {
+	@include container;
+}
+
+#main {
+	
+	.col1 {
+		background-color: #ffc4c4;
+		background-color: #000000;
+	}
+	
+	.col2 {
+		background-color: #fcd48f;
+		
+	}
+}

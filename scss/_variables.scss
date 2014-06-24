@@ -1,0 +1,95 @@
+// Variables =============================================
+
+// COLORS                   ==============================
+
+$base-blue                  : #417897;  
+$light-blue                 : #d1e1ea;
+$green		                : #199c74;
+
+// DOCUMENT 				==============================
+
+$base-font-primary			: "Open Sans", sans-serif;
+$base-font-secondary        : "Open Sans", sans-serif;
+$body-background 			: #e9e9e9;
+$base-font-color            : #535353;
+$base-font-size             : 14px;
+$base-font-weight 			: 400;
+$base-line-height 			: 160%;
+
+// TYPOGRAPHY 				==============================
+
+$h-line-height				: 1.5em;
+$h-color					: #101010;
+
+$h1-font-size				: 24px;
+$h1-margin					: 12px;
+$h1-line-height             : 38px;
+
+$h2-font-size				: 18px;
+$h2-margin					: 12px;
+$h2-line-height             : 34px;
+
+$h3-font-size				: 16px;
+$h3-margin					: 10px;
+$h3-line-height             : 28px;
+
+$h4-font-size				: 14px;
+$h4-margin					:  8px;
+$h4-line-height             : 24px;
+
+$h5-font-size				: 12px;
+$h5-margin					:  6px;
+$h5-line-height             : 22px;
+
+$h6-font-size				: 11px;
+$h6-margin					:  4px;
+$h6-line-height             : 20px;
+
+$ins-bg-color     			: #FF9;
+$ins-color       			: #000;
+
+$mark-bg-color    			: #FF9;
+$mark-color      			: #000000;
+
+$hr             			: #E5E5E5;
+
+$selection-bg    			: #C4E3FB;
+$selection-color 			: #FFFFFF;
+
+$code-font 					: "Courier New", Courier, monospace;
+
+// Blockquotes 				------------
+
+$blq-font-family			: "PT Serif", "Georgia", "Times New Roman", Times, Serif;
+$blq-font-size				: 16px;
+$blq-font-style				: italic;
+$blq-line-height			: 1.8em;
+
+// links
+
+$linkColor: #43759f;
+$linkHover: darken($linkColor, 24%);
+
+// MESSAGE BOXES 			==============================
+
+$msg-border-color			: #e5e5e5;
+$msg-margin-bottom			: 20px;
+$msg-padding				: 10px;
+$msg-icon-position			: 11px;
+
+$msg-info-border-color		: #b6Cfe5;
+$msg-info-color				: #00529b;
+$msg-success-border-color	: #9edc95;
+$msg-success-color			: #5d792e;
+$msg-error-border-color		: #e1a3a3;
+$msg-error-color			: #d54444;
+$msg-warning-border-color	: #e2c74f;
+$msg-warning-color			: #9f6000;
+
+
+// SPECIAL CONDITIONS
+
+// Browser Prefix Yep Nope
+$experimental-support-for-opera: false;
+$experimental-support-for-microsoft: false;
+$experimental-support-for-khtml: false;

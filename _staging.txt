@@ -1,0 +1,1 @@
+** Add a config option for image file name in case it is img or images etc.
